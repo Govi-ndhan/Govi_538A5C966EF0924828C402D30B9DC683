@@ -17,12 +17,12 @@ class Bank_Account:
         print("\nWithdral Report:")
         if self.__balance>=amount:
             self.__balance-=amount
-            print("Acco`unt No: ",self.__acntno,"\nAccount Holder Name: ",self.__acnthldnm,"\nYour Withdrew: ", amount)
+            print("Account No: ",self.__acntno,"\nAccount Holder Name: ",self.__acnthldnm,"\nYour Withdrew: ", amount)
         else:
             print("\n Insufficient __balance  ")
  
     def display(self):
-        print("\nBalance Report:","\nAcco`unt No: ",self.__acntno,"\nAccount Holder Name: ",self.__acnthldnm,"\nNet Available Balance=",self.__balance)
+        print("\nBalance Report:","\nAccount No: ",self.__acntno,"\nAccount Holder Name: ",self.__acnthldnm,"\nNet Available Balance=",self.__balance)
  
 s = Bank_Account()
 s.deposit()
