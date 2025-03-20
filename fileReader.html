@@ -1,0 +1,22 @@
+<html>
+    <Head>
+        <Script>
+            onld = ()=> {
+            const fs = require('fs');
+            try {
+                const data = fs.readFileSync('Naan Mudh.txt', 'utf8');
+                var s = data.toString();
+                alert('Done!');
+                document.getElementById("p").innerText = s;
+            } 
+            catch (error) {
+                console.error('Error reading file:', error.message);
+                throw error;
+            }
+        }
+        </Script>
+    </Head>
+    <body>
+        <p id="p" onload="onld()"></p>
+    </body>
+</html>
